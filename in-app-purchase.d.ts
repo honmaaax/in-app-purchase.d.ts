@@ -27,7 +27,7 @@ declare module iap {
         config(options:iapOptions):void
         setup(callback:(err:errorInfo)=>void):void
         validate(type:string, receipt:string, callback:(err:errorInfo, res:response)=>void)
-        isValidated(res:response)
+        isValidated(res:response):boolean
         getPurchaseData(res:response):purcahseData[]
     }
 }
