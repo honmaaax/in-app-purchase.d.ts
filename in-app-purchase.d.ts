@@ -13,11 +13,11 @@ declare module iap {
         expirationDate:number
     }
     export interface iapOptions {
-        requestDefaults:{
+        requestDefaults?:{
             timeout:number
         }
-        applePassword:string
-        googlePublicKeyPath:string
+        applePassword?:string
+        googlePublicKeyPath?:string
     }
     export interface iapStatic {
         APPLE:string
